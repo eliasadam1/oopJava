@@ -1,12 +1,34 @@
 package masodfokuegyenlet;
 
+import java.util.Scanner;
+
 public class masodfoku {
 	public static void main(String args[]){
-		int a = 5;
-		int b = 20;
-		int c = 2;
+		int tomb[] = new int[3];
 		double diszkriminans = 0;
 		double x1,x2 = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		int a=0;
+		int b=0;
+		int c=0;
+		
+		
+		System.out.println("Kerem adja meg az 1. együtthatot: ");
+		tomb[0] = sc.nextInt();
+		
+		System.out.println("Kerem adja meg az 2. együtthatot: ");
+		tomb[1] = sc.nextInt();
+		
+		System.out.println("Kerem adja meg az 3. együtthatot: ");
+		tomb[2] = sc.nextInt();
+		
+		sc.close();
+		
+		a = tomb[0];
+		b = tomb[1];
+		c = tomb[2];
+		
 		diszkriminans = Math.sqrt((b*b)-4*a*c); 
 		
 		if(Double.isNaN(diszkriminans)){
