@@ -18,7 +18,7 @@ public class Alkalmazott {
 	public void setName(String nameIn){
 		name = nameIn;
 	}
-	public getPayment(){
+	public int getPayment(){
 		return payment;
 	}
 	public void setPayment(int paymentIn){
