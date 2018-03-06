@@ -32,6 +32,9 @@ public class AlkFut {
 			if (alkok[i].getPayment() > max)
 				max = alkok[i].getPayment();
 		}
+		
+		
+		
 		System.out.println("A legnagyobb: " + max);
 
 		Alkalmazott alk1 = new Alkalmazott();
